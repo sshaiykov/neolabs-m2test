@@ -82,8 +82,9 @@ module.exports.chooseWeather = () =>
 weather[Math.floor(Math.random() * weather.length)]
 
 
-module.exports.findDay = (day) => {
+module.exports.chooseDay = (day) => {
     const filtered = Object.keys(this.weather).filter(key => this.weather[key][0] == day)
     return filtered[0]
     ? this.weather[filtered[0]].join('.\n') : null
 }
+

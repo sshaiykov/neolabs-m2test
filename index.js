@@ -1,6 +1,6 @@
 const bot = require('./utils/bootstrap')
-const { startWF, chooseDay, daysOfWeek } = require('./utils/keyboard')
-const { chooseWeather, days, findDay} = require('./utils/weather')
+const { startWF, daysOfWeek } = require('./utils/keyboard')
+const { chooseWeather,chooseDay, days} = require('./utils/weather')
 
 bot.start(ctx => ctx.reply(`Привет, ${ctx.message.from.first_name}!`, startWF()))
 

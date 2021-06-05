@@ -7,7 +7,7 @@ Markup.keyboard([
     ])
     .resize()
 
-module.exports.chooseDay = () =>
+module.exports.daysOfWeek = () =>
     Markup.keyboard([
         ['Понедельник', 'Вторник', 'Среда'], 
         ['Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
